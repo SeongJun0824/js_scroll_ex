@@ -1,0 +1,135 @@
+@import url(common/reset.css);
+
+/*header*/
+.header {
+  width: 100%;
+  height: auto;
+  background-color: rgba(46, 40, 40, 0.39);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.header .inner-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.header .inner-header .nav {
+  flex: 0 1 1200px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgba(204, 204, 204, 0.521); */
+  padding: 0 1vw;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+}
+
+.header .inner-header .nav h1.logo {
+  flex: 0 1 120px;
+  height: auto;
+}
+
+.header .inner-header .nav h1.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header .inner-header .nav .gnb {
+  flex: 0 5 450px;
+  height: auto;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  padding: 5px 0;
+  /* background-color: rgba(34, 34, 34, 0.295); */
+}
+
+.header .inner-header .nav .gnb>ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.header .inner-header .nav .gnb>ul>li {
+  flex: 1;
+  text-align: center;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.header .inner-header .nav .gnb>ul>li:hover {
+  background-color: rgb(80, 80, 95);
+}
+
+.header .inner-header .nav .gnb>ul>li>a {
+  line-height: 30px;
+  /* display: block; */
+  background-color: inherit;
+  color: inherit;
+}
+
+.header .inner-header .nav .gnb>ul>li>a:hover {}
+
+/*right-menu*/
+.right-menu {
+  width: auto;
+  height: auto;
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* border: 1px solid; */
+  box-sizing: border-box;
+}
+.right-menu .scroll-btn{
+  /* border: 1px solid; */
+  box-sizing: border-box;
+}
+.right-menu .scroll-btn ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3px;
+}
+.right-menu .scroll-btn ul li{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.right-menu .scroll-btn ul li:hover{
+  background-color: #0005;
+}
+.on{
+  background-color: #0005;
+}
+
+/*sections*/
+.sections{
+  width: 100%;
+  min-height: 100vh;
+  /* border: 10px solid #222; */
+  box-sizing: border-box;
+}
+.sections .section{
+  width: 100%;
+  min-height: 100vh;
+  border: 10px solid #2225;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media only screen and(max-width:640){
+  .header .inner-header .nav .gnb {
+    display: none;
+  }
+}
