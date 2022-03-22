@@ -62,7 +62,6 @@
   box-sizing: border-box;
   color: #fff;
 }
-
 .header .inner-header .nav .gnb>ul>li:hover {
   background-color: rgb(80, 80, 95);
 }
@@ -75,6 +74,13 @@
 }
 
 .header .inner-header .nav .gnb>ul>li>a:hover {}
+
+.headerOn{
+  background-color: #555555aa;
+  box-shadow: 0 2px 2px #cccccc;
+  transition: all 0.2s;
+  padding: 0px 0;
+}
 
 /*right-menu*/
 .right-menu {
@@ -100,7 +106,7 @@
 .right-menu .scroll-btn ul li{
   width: 20px;
   height: 20px;
-  border: 1px solid #000;
+  border: 1px solid #0005;
   border-radius: 50%;
 }
 .right-menu .scroll-btn ul li:hover{
@@ -126,7 +132,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 @media only screen and(max-width:640){
   .header .inner-header .nav .gnb {
